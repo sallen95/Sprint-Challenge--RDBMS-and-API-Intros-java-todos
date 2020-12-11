@@ -1748,9 +1748,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Can you explain your data model, data schema to me?
+
+There are 2 tables. The Users table and the Todos table. The Users table has a OneToMany relationship to the Todos table. The Users table has a userid, a String username, password, and primary email, and then a createdby, lastmodifiedby, createddate, and lastmodifieddate. The Todos table has a ManyToOne relationship to Users and has a todoid, a boolean completed, a String description, a foreign Userid, and createdby, createddate, lastmodifiedby, and lastmodifieddate.
+
 2. Can you explain how you connected your API to a database?
+
+I connect my API to a database by extending my repositories to a CrudRepository.
+
 3. Can you explain the flow of data from client through the backend system and back to the client?
+
+The uses the frontend ui to do http requests. Those requests are initially handled by my controllers then services then repository. That then gives the information back to the client.
+
 4. How did you handle querying in your application: custom querying vs JPA Querying?
+
+I mostly just used JPA querying in my application. The endpoints are accessed and handled by JPA querying.
 
 ## Instructions
 

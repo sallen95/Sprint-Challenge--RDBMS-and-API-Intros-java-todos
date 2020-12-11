@@ -112,7 +112,7 @@ public class UserController
     }
 
     /**
-     * Gathers list of users and their number of non completed tasks!
+     * Stretch Gathers list of users and their number of non completed tasks!
      *
      * @return List of usernames, count of non completed tasks
      */
